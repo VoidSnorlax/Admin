@@ -10,4 +10,5 @@ let app = createApp(App)
 app.use(ElementPlus, {
   locale: zhCn,
 })
+import 'virtual:svg-icons-register'
 app.mount('#app')

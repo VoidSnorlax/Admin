@@ -1,5 +1,14 @@
+<!--
+ * @Author: WTH 1916283894@qq.com
+ * @Date: 2023-09-05 17:45:08
+ * @LastEditors: WTH 1916283894@qq.com
+ * @LastEditTime: 2023-09-12 19:20:26
+ * @FilePath: \Admin\Admin\Admin\src\App.vue
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import SvgIcon from '@/components/SvgIcon/index.vue'
 </script>
 
 <template>
@@ -12,6 +21,13 @@ import HelloWorld from './components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  <SvgIcon></SvgIcon>
+  <!-- svg:图标外层容器节点
+       xlink:href执行用哪一个图标,属性值务必#icon+图标名字 
+  -->
+  <svg style="width: 30px; height: 30px">
+    <use xlink:href="#icon-shoping" fill="red"></use>
+  </svg>
 </template>
 
 <style scoped>
