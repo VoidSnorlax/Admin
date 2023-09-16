@@ -21,13 +21,10 @@ import SvgIcon from '@/components/SvgIcon/index.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
-  <SvgIcon></SvgIcon>
+  <SvgIcon name="shoping" width="100px" height="100px" color="pink"></SvgIcon>
   <!-- svg:图标外层容器节点
        xlink:href执行用哪一个图标,属性值务必#icon+图标名字 
   -->
-  <svg style="width: 30px; height: 30px">
-    <use xlink:href="#icon-shoping" fill="red"></use>
-  </svg>
 </template>
 
 <style scoped>
